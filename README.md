@@ -1,18 +1,23 @@
+<<<<<<< HEAD
+
 <p align="center">
   <img alt="OpenDevin Logo" src="/frontend/public/img/icon-our.png" width="150" />
 </p>
 
-# OpenDevin: Code Less, Make More
+# Open Diamond: Unique Experience, Enjoy a Luxury Experience
 
 [demo-video.webm]()
 
 ## Mission 🎯
 
-Welcome to OpenDevin, an open-source project aiming to replicate [Devin](https://www.cognition-labs.com/introducing-devin), an autonomous AI software engineer who is capable of executing complex engineering tasks and collaborating actively with users on software development projects. This project aspires to replicate, enhance, and innovate upon Devin through the power of the open-source community.
+Welcome to Diamond City Booking Project
 
-## Work in Progress
+# The diamoncity Booking site
 
-OpenDevin is still a work in progress. But you can run the alpha version to see things working end-to-end.
+Leader: Phu Nhan (Thang loi group)
+Owner: Giang
+Team size: 1
+Tech: ReactJS (redux--toolkit,...), bootstrap, HTML, CSS, responsive
 
 ### Requirements
 
@@ -57,4 +62,6 @@ Please feel free to contact me via phone or email or in the "Hire me" in my [por
 
 Together, we can make significant strides towards simplifying software, app, web engineering tasks and creating more efficient, friendly website for our clients everywhere.
 
-🐚 **Best Regards, Giang**
+# 🐚 **Best Regards, Giang**
+
+> > > > > > > 1d741214537c979393ecba354c6103663f002e0a
