@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 <p align="center">
   <img alt="OpenDevin Logo" src="/frontend/public/img/icon-our.png" width="150" />
 </p>
@@ -56,10 +54,10 @@ Achieving full replication of production-grade applications with LLMs is a compl
 
 - **Frontend Interface:** Developing user-friendly interfaces for monitoring, potentially leveraging frameworks/libs like React or creating a VSCode plugin for a more integrated experience,etc....
 
-## Contact Me
-
+## 🐚 Contact Me
 Please feel free to contact me via phone or email or in the "Hire me" in my [portfolio](https://portfolio-mu-ivory-58.vercel.app/).
-
 Together, we can make significant strides towards simplifying software, app, web engineering tasks and creating more efficient, friendly website for our clients everywhere.
 
-# 🐚 **Best Regards, Giang**
+## **Best Regards, Giang**
+phone: 0834718218 <br>
+email: vophonggiang0205@gmail.com or shane.benjamin.dev@gmail.com
