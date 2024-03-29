@@ -18,13 +18,13 @@ export default function HomeCarousel() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              <h1 className="unique">Unique Experience</h1>
+              <h1 className="unique">Royal Hotel</h1>
             </motion.div>
             <div>
               <p className="Enjoy">
                 {" "}
                 <span className="line-t"></span>
-                Enjoy With US
+                Unique Experience
                 <span className="line-b"></span>
               </p>
             </div>

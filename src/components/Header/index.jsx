@@ -138,7 +138,7 @@ export default function Navbar() {
                   src="https://cdn-icons-png.flaticon.com/512/2111/2111254.png"
                   alt=""
                 />
-                <div className="main__Title ml-2">AirBnb</div>
+                <div className="main__Title ml-2">RoyalHome</div>
               </Link>
 
               <div className="d-flex">
