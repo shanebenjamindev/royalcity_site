@@ -63,5 +63,3 @@ Please feel free to contact me via phone or email or in the "Hire me" in my [por
 Together, we can make significant strides towards simplifying software, app, web engineering tasks and creating more efficient, friendly website for our clients everywhere.
 
 # 🐚 **Best Regards, Giang**
-
-> > > > > > > 1d741214537c979393ecba354c6103663f002e0a
