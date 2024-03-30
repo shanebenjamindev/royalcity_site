@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes } from "react-router-dom";
 import renderRoutes from "./routes";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import Loading from "./components/Loading";
 
 import AOS from "aos";
