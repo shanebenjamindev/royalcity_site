@@ -15,6 +15,7 @@ import { useCheckRole } from "../../hooks/useCheckRole";
 import { Button, DatePicker, Form, InputNumber, Select } from "antd";
 const { Option } = Select;
 import { actListCity } from "../../redux/actions/actCity";
+import { useResetLocal } from "../../hooks/useResetLocal";
 export default function Navbar() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -53,10 +54,7 @@ export default function Navbar() {
   };
 
   const handleLogout = () => {
-    if (window.confirm("Are you sure you want to log out?")) {
-      localStorage.removeItem("USER_LOGIN");
-      navigate(`/`);
-    }
+    useResetLocal();
   };
 
   const renderDropDownCity = () => {
@@ -175,15 +173,29 @@ export default function Navbar() {
                   className="dropdown-menu custom__Border-50 main__p dropdown-menu-right mt-0"
                   aria-labelledby="navbarDropdown"
                 >
+                  <a className="dropdown-item" href="/">
+                    Cho thuê nhà
+                  </a>
+                  <a className="dropdown-item" href="/">
+                    Tổ chức trãi nghiệm
+                  </a>
+                  <a className="dropdown-item" href="/">
+                    Trợ giúp
+                  </a>
+                  {user?.role === "admin" ? (
+                    <Link className="dropdown-item" to="/auth">
+                      <span className="main__p">Admin Page</span>
+                    </Link>
+                  ) : null}
                   {user ? (
                     <>
-                      <Link to="/user-info" className="dropdown-item">
+                      <Link to="/user-info" className="text-info dropdown-item">
                         Hồ sơ của {user.name}
                       </Link>
                       <Link
                         to="/"
                         onClick={handleLogout}
-                        className="dropdown-item"
+                        className="dropdown-item text-danger"
                       >
                         Đăng xuất
                       </Link>
@@ -198,18 +210,6 @@ export default function Navbar() {
                       </Link>
                     </>
                   )}
-                  <a className="dropdown-item" href="/">
-                    Cho thuê nhà
-                  </a>
-                  <a className="dropdown-item" href="/">
-                    Tổ chức trãi nghiệm
-                  </a>
-                  <a className="dropdown-item" href="/">
-                    Trợ giúp
-                  </a>
-                  <Link className="dropdown-item" to="/auth">
-                    <span className="main__p">Admin Page</span>
-                  </Link>
                 </div>
               </div>
             </div>

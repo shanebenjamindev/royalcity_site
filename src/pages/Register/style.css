@@ -1,0 +1,40 @@
+.register-page {
+    background: url(http://landing.engotheme.com/html/skyline/demo/images/Login/login.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.error {
+    margin: 5px 0;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.register-page .btn {
+    margin-bottom: 28px;
+    margin-top: 15px;
+    height: 42px;
+    background: transparent;
+    border: 2px solid white;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin: 10px 10px;
+}

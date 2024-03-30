@@ -25,26 +25,6 @@ const actHomeListRoomRequest = () => ({ type: actions.HOMELIST_ROOM_REQUEST })
 const actHomeListRoomSuccess = (data) => ({ type: actions.HOMELIST_ROOM_SUCCESS, payload: data })
 const actHomeListRoomFail = (error) => ({ type: actions.HOMELIST_ROOM_FAIL, payload: error })
 
-export const actGetRoomByUser = (id) => {
-    return (dispatch) => {
-        dispatch(actGetListRoomByIdRequest)
-        api.get(`/dat-phong/lay-theo-nguoi-dung/${id}`)
-            .then((result) => {
-                if (result.data.statusCode === 200) {
-                    dispatch(actGetListRoomByIdSuccess(result.data.content))
-                }
-            })
-            .catch((error) => {
-                const { content } = error.response.data
-                dispatch(actGetListRoomByIdFail(content))
-            })
-    }
-}
-
-const actGetListRoomByIdRequest = () => ({ type: actions.ROOM_DETAIL_REQUEST })
-const actGetListRoomByIdSuccess = (data) => ({ type: actions.ROOM_DETAIL_SUCCESS, payload: data })
-const actGetListRoomByIdFail = (error) => ({ type: actions.ROOM_DETAIL_FAIL, payload: error })
-
 // Post Room 
 export const actAddRoom = (roomData) => {
     return (dispatch) => {
@@ -53,7 +33,7 @@ export const actAddRoom = (roomData) => {
             .then((result) => {
                 // console.log(result.data.content);
                 dispatch(actAddRoomSuccess(result.data.content))
-            // alert("Đã thêm vào hồ sơ")
+                // alert("Đã thêm vào hồ sơ")
             })
             .catch((error) => {
                 const { content } = error.response.data
@@ -74,7 +54,6 @@ export const actDeleteRoom = (id) => {
             .then((result) => {
                 if (result.data.statusCode === 200) {
                     alert(result.data.message)
-                    // dispatch(actDeleteRoomSuccess(result.data.content))
                 }
             })
             .catch((error) => {

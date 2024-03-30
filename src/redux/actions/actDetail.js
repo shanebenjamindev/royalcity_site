@@ -34,6 +34,26 @@ export const actCityDetail = (id) => {
 }
 
 
+export const actGetRoomByUser = (id) => {
+    return (dispatch) => {
+        dispatch(actGetListRoomByUserRequest)
+        api.get(`/dat-phong/lay-theo-nguoi-dung/${id}`)
+            .then((result) => {
+                if (result.data.statusCode === 200) {
+                    dispatch(actGetListRoomByUserSuccess(result.data.content))
+                }
+            })
+            .catch((error) => {
+                const { content } = error.response.data
+                dispatch(actGetListRoomByUserFail(content))
+            })
+    }
+}
+
+const actGetListRoomByUserRequest = () => ({ type: actions.USER_ROOM_REQUEST })
+const actGetListRoomByUserSuccess = (data) => ({ type: actions.USER_ROOM_SUCCESS, payload: data })
+const actGetListRoomByUserFail = (error) => ({ type: actions.USER_ROOM_FAIL, payload: error })
+
 const actRoomDetailRequest = () => ({ type: actions.ROOM_DETAIL_REQUEST })
 const actRoomDetailSucess = (data) => ({ type: actions.ROOM_DETAIL_SUCCESS, payload: data })
 const actRoomDetailFail = (error) => ({ type: actions.ROOM_DETAIL_FAIL, payload: error })

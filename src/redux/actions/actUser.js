@@ -1,6 +1,6 @@
 import * as actions from '../types/constants'
 import api from '../../ApiUtils'
-import { actGetRoomByUser } from './actRoom'
+
 // Post Checkout
 export const actCheckout = (roomData) => {
     return (dispatch) => {
@@ -91,7 +91,7 @@ export const actEditUserInfo = (id, newProfile) => {
             .then((result) => {
                 if (result.data.statusCode === 200) {
                     alert("done")
-                    dispatch(actEditUserInfoSuccess({id, newProfile}))
+                    dispatch(actEditUserInfoSuccess({ id, newProfile }))
                     window.location.reload()
                 }
             })
@@ -115,6 +115,7 @@ export const actDeleteUserRoom = (id) => {
             .then((result) => {
                 if (result.data.statusCode === 200) {
                     alert(result.data.message);
+                    window.location.reload();
                 }
             })
             .catch((error) => {

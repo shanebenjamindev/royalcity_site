@@ -34,6 +34,7 @@ export const actRegister = (userRegister, navigate) => {
         dispatch(actRegisterRequest)
         api.post(`/auth/signup`, userRegister)
             .then((result) => {
+                console.log(userRegister);
                 if (result.data.statusCode === 200) {
                     dispatch(actRegisterSuccess(result.data.content))
                     alert("Đăng ký thành công, trở về trang chủ!")

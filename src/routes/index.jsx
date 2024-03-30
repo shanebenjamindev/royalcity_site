@@ -10,10 +10,10 @@ const routes = [
         path: "",
         element: lazy(() => import("../pages/Home/Home")),
       },
-      //   {
-      //     path: "user-info",
-      //     element: lazy(() => import("../pages/UserInfo")),
-      //   },
+      {
+        path: "user-info",
+        element: lazy(() => import("../pages/UserInfo")),
+      },
       {
         path: "roombycity/:id",
         element: lazy(() => import("../pages/CityDetail/CityDetail")),
@@ -22,14 +22,14 @@ const routes = [
         path: "roomdetail/:id",
         element: lazy(() => import("../pages/ProductDetail/ProductDetail")),
       },
-      //   {
-      //     path: "login-page",
-      //     element: lazy(() => import("../pages/Login")),
-      //   },
-      //   {
-      //     path: "register-page",
-      //     element: lazy(() => import("../pages/Register")),
-      //   },
+      {
+        path: "login-page",
+        element: lazy(() => import("../pages/Login/Login")),
+      },
+      {
+        path: "register-page",
+        element: lazy(() => import("../pages/Register/Register")),
+      },
     ],
   },
 ];
