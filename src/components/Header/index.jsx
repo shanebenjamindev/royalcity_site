@@ -48,6 +48,7 @@ export default function Navbar() {
   };
 
   const handleOnSubmit = (e) => {
+    e.preventDefault();
     if (state.id !== "") {
       navigate(`/roombycity/${state.id}`);
     }
@@ -73,7 +74,7 @@ export default function Navbar() {
             <option value="">- Chọn thành phố -</option>
             {listCityData?.map((city) => (
               <option key={city.id} value={city.id}>
-                {city.tenViTri}
+                <Link to={`/roombycity/${city.id}`}>{city.tenViTri}</Link>
               </option>
             ))}
           </select>
