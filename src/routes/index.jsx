@@ -14,14 +14,14 @@ const routes = [
       //     path: "user-info",
       //     element: lazy(() => import("../pages/UserInfo")),
       //   },
-      //   {
-      //     path: "roombycity/:id",
-      //     element: lazy(() => import("../pages/RoomByCity")),
-      //   },
-      //   {
-      //     path: "roomdetail/:id",
-      //     element: lazy(() => import("../pages/RoomDetail")),
-      //   },
+      {
+        path: "roombycity/:id",
+        element: lazy(() => import("../pages/CityDetail/CityDetail")),
+      },
+      {
+        path: "roomdetail/:id",
+        element: lazy(() => import("../pages/ProductDetail/ProductDetail")),
+      },
       //   {
       //     path: "login-page",
       //     element: lazy(() => import("../pages/Login")),

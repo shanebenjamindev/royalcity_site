@@ -11,6 +11,27 @@ export default function HomeCarousel() {
     >
       <div className="carousel-inner">
         <div className="carousel-item active">
+          <img src="./img/slider-2.jpg" className="d-block w-100" alt="..." />
+          <div className="carousel-caption">
+            <motion.div
+              initial={{ y: "3vw", opacity: 0, transitionDelay: 2000 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+            >
+              <h1 className="unique">The Diamond City</h1>
+            </motion.div>
+            <div>
+              <p className="Enjoy">
+                {" "}
+                <span className="line-t"></span>
+                Unique Hotel Experience
+                <span className="line-b"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="carousel-item">
           <img src="./img/slider-1.jpg" className="d-block w-100" alt="..." />
           <div className="carousel-caption">
             <motion.div
@@ -18,13 +39,13 @@ export default function HomeCarousel() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              <h1 className="unique">Royal Hotel</h1>
+              <h1 className="unique">The Diamond City</h1>
             </motion.div>
             <div>
               <p className="Enjoy">
                 {" "}
                 <span className="line-t"></span>
-                Unique Experience
+                Unique Hotel Experience
                 <span className="line-b"></span>
               </p>
             </div>

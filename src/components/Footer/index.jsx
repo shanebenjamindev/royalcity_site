@@ -111,55 +111,57 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
-      <div className="footer__Bottom py-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4">
-              <h3>Support</h3>
-              <ul className="list-unstyled">
-                <li>Help Center</li>
-                <li>AirCover</li>
-                <li>Anti-discrimination</li>
-                <li>Disability Support</li>
-                <li>Cancellation Options</li>
-                <li>Report Neighborhood Concern</li>
-              </ul>
-            </div>
-            <div className="col-md-4">
-              <h3>Hosting</h3>
-              <ul className="list-unstyled">
-                <li>Airbnb Your Home</li>
-                <li>AirCover for Hosts</li>
-                <li>Hosting Resources</li>
-                <li>Community Forum</li>
-                <li>Hosting Responsibly</li>
-                <li>Airbnb-Friendly Apartments</li>
-              </ul>
-            </div>
-            <div className="col-md-4">
-              <h3>Airbnb</h3>
-              <ul className="list-unstyled">
-                <li>Newsroom</li>
-                <li>New Features</li>
-                <li>Careers</li>
-                <li>Investors</li>
-                <li>Gift Cards</li>
-                <li>Airbnb.org Emergency Stays</li>
-              </ul>
-            </div>
-          </div>
-          <div className="row mt-4">
-            <div className="col">
-              <p className="text-center">
-                © 2024 Royal, Inc. · <a href="#">Terms</a> ·
-                <a href="#">Sitemap</a> ·<a href="#">Privacy</a> · Your Privacy
-                Choices
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </footer>
   );
+}
+
+{
+  /* <div className="footer__Bottom bg-dark py-5">
+<div className="container">
+  <div className="row">
+    <div className="col-md-4">
+      <h3>Support</h3>
+      <ul className="list-unstyled">
+        <li>Help Center</li>
+        <li>AirCover</li>
+        <li>Anti-discrimination</li>
+        <li>Disability Support</li>
+        <li>Cancellation Options</li>
+        <li>Report Neighborhood Concern</li>
+      </ul>
+    </div>
+    <div className="col-md-4">
+      <h3>Hosting</h3>
+      <ul className="list-unstyled">
+        <li>Airbnb Your Home</li>
+        <li>AirCover for Hosts</li>
+        <li>Hosting Resources</li>
+        <li>Community Forum</li>
+        <li>Hosting Responsibly</li>
+        <li>Airbnb-Friendly Apartments</li>
+      </ul>
+    </div>
+    <div className="col-md-4">
+      <h3>Airbnb</h3>
+      <ul className="list-unstyled">
+        <li>Newsroom</li>
+        <li>New Features</li>
+        <li>Careers</li>
+        <li>Investors</li>
+        <li>Gift Cards</li>
+        <li>Airbnb.org Emergency Stays</li>
+      </ul>
+    </div>
+  </div>
+  <div className="row mt-4">
+    <div className="col">
+      <p className="text-center">
+        © 2024 Royal, Inc. · <a href="#">Terms</a> ·
+        <a href="#">Sitemap</a> ·<a href="#">Privacy</a> · Your Privacy
+        Choices
+      </p>
+    </div>
+  </div>
+</div>
+</div> */
 }

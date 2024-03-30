@@ -35,14 +35,14 @@ export default function HomeRoom() {
     <div className="section__Item-primary p-5">
       <div className="text-center">
         <div delay={1000}>
-          <h2 className="main__Title">Our Room</h2>
+          <h2 className="main__Title">TÌM NĂNG ĐẾN TỪ SỰ PHÁT TRIỂN VƯỢT TRỘI HẠ TẦNG KHU VỰC</h2>
           <div className="outline"></div>
         </div>
       </div>
       <div delay={1200}>
         <p className="room-p text-center">
-          When you host a party or family reunion, the special celebrations let
-          you strengthen bonds with
+          Các dự án do Thắng lợi phát triển mở ra những không gian sống mới, điều
+          mà không nhiều dự án BĐS nào khác có thể làm được.
         </p>
       </div>
       <div className="my-4">

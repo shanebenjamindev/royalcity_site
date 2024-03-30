@@ -1,5 +1,9 @@
 .carousel-caption {
-  top: 250px;
+  top: 45rem;
+}
+
+.carousel-item img {
+  height: 100dvh;
 }
 
 h1.unique {
@@ -47,10 +51,6 @@ h1.unique {
 }
 
 @media only screen and (max-width: 1200px) {
-  .carousel-caption {
-    top: 150px;
-    font-size: 20px;
-  }
 
   h1.unique {
     font-size: 40px;

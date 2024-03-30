@@ -63,7 +63,7 @@ export default function Navbar() {
     return (
       <form
         onSubmit={handleOnSubmit}
-        className="formFindRoom container-fluid w-75 m-auto d-flex flex-wrap justify-content-around align-items-center text-left"
+        className="formFindRoom container container-fluid d-flex flex-wrap justify-content-around align-items-center text-left"
       >
         <div className="col-md-3 formFindRoom__Item ">
           <span>Địa điểm </span>
@@ -113,7 +113,7 @@ export default function Navbar() {
   return (
     <header>
       <div className="header">
-        <div className="navbar__Container container main__p align-items-center navbar-expand-lg navbar-dark pb-2">
+        <div className="navbar__Container main__p align-items-center navbar-expand-lg navbar-dark pb-2">
           <nav className="navbar d-flex">
             <div className="d-flex w-100 justify-content-between">
               <button
@@ -138,27 +138,24 @@ export default function Navbar() {
                   src="https://cdn-icons-png.flaticon.com/512/2111/2111254.png"
                   alt=""
                 />
-                <div className="main__Title ml-2">RoyalHome</div>
+                <div className="main__Title ml-2">Diamond</div>
               </Link>
 
               <div className="d-flex">
                 <div className="text-white icon1 nav-link d-none d-md-block">
-                  <div>
-                    <a href="/">
-                      {" "}
-                      <FacebookOutlined className="px-2" />
-                    </a>
-                    <a href="/">
-                      <TwitterOutlined className="px-2" />
-                    </a>
-                    <a href="/">
-                      {" "}
-                      <YoutubeOutlined className="px-2" />
-                    </a>
-                    <a href="/">
-                      <InstagramOutlined className="px-2" />
-                    </a>
-                  </div>
+                  <a href="/">
+                    {" "}
+                    <FacebookOutlined className="mx-2" />
+                  </a>
+                  <a href="/">
+                    <TwitterOutlined className="mx-2" />
+                  </a>
+                  <a href="/">
+                    <YoutubeOutlined className="mx-2" />
+                  </a>
+                  <a href="/">
+                    <InstagramOutlined className="mx-2" />
+                  </a>
                 </div>
 
                 <a
@@ -222,19 +219,19 @@ export default function Navbar() {
             <div className="d-flex flex-wrap container align-items-center justify-content-around text-white">
               <div className="text-center nav-link">
                 {/* Button to Show Form */}
-                <div className="btnFindRoom__Container d-flex">
+                <div className="btnFindRoom__Container">
                   <div
                     className={`d-flex text-center m-auto justify-content-between`}
                   >
                     <div
                       onClick={toggleForm}
-                      className={`btnFindRoom__Items btn d-flex flex-wrap text-center justify-content-center ${
+                      className={`btnFindRoom__Items btn d-md-flex text-center justify-content-center ${
                         buttonActive ? `btnFindRoom__Container-active` : ``
                       }`}
                     >
                       <div className="btnFindRoom__Item">Địa điểm bất kỳ</div>
                       <div className="btnFindRoom__Item">Tuần bất kỳ</div>
-                      <div className="btnFindRoom__Item">Thêm khách</div>
+                      <div className="btnFindRoom__Item">Khách</div>
                       <button className="btnFindRoom__Item">
                         <SearchOutlined />
                       </button>

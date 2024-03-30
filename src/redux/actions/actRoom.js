@@ -25,22 +25,6 @@ const actHomeListRoomRequest = () => ({ type: actions.HOMELIST_ROOM_REQUEST })
 const actHomeListRoomSuccess = (data) => ({ type: actions.HOMELIST_ROOM_SUCCESS, payload: data })
 const actHomeListRoomFail = (error) => ({ type: actions.HOMELIST_ROOM_FAIL, payload: error })
 
-export const actGetRoomByCity = (id) => {
-    return (dispatch) => {
-        dispatch(actGetListRoomByIdRequest)
-        api.get(`/phong-thue/lay-phong-theo-vi-tri?maViTri=${id}`)
-            .then((result) => {
-                if (result.data.statusCode === 200) {
-                    dispatch(actGetListRoomByIdSuccess(result.data.content))
-                }
-            })
-            .catch((error) => {
-                const { content } = error.response.data
-                dispatch(actGetRoomByCity(content))
-            })
-    }
-}
-
 export const actGetRoomByUser = (id) => {
     return (dispatch) => {
         dispatch(actGetListRoomByIdRequest)
@@ -57,28 +41,9 @@ export const actGetRoomByUser = (id) => {
     }
 }
 
-const actGetListRoomByIdRequest = () => ({ type: actions.GET_ROOM_BY_ID_REQUEST })
-const actGetListRoomByIdSuccess = (data) => ({ type: actions.GET_ROOM_BY_ID_SUCCESS, payload: data })
-const actGetListRoomByIdFail = (error) => ({ type: actions.GET_ROOM_BY_ID_FAIL, payload: error })
-
-export const actRoomDetail = (id) => {
-    return (dispatch) => {
-        dispatch(actRoomDetailRequest)
-        api.get(`phong-thue/${id}`)
-            .then((result) => {
-                if (result.data.statusCode === 200) {
-                    dispatch(actRoomDetailSucess(result.data.content))
-                }
-            })
-            .catch((error) => {
-                dispatch(actRoomDetailFail(error.response.data))
-            })
-    }
-}
-
-const actRoomDetailRequest = () => ({ type: actions.ROOM_DETAIL_REQUEST })
-const actRoomDetailSucess = (data) => ({ type: actions.ROOM_DETAIL_SUCCESS, payload: data })
-const actRoomDetailFail = (error) => ({ type: actions.ROOM_DETAIL_FAIL, payload: error })
+const actGetListRoomByIdRequest = () => ({ type: actions.ROOM_DETAIL_REQUEST })
+const actGetListRoomByIdSuccess = (data) => ({ type: actions.ROOM_DETAIL_SUCCESS, payload: data })
+const actGetListRoomByIdFail = (error) => ({ type: actions.ROOM_DETAIL_FAIL, payload: error })
 
 // Post Room 
 export const actAddRoom = (roomData) => {
@@ -88,7 +53,7 @@ export const actAddRoom = (roomData) => {
             .then((result) => {
                 // console.log(result.data.content);
                 dispatch(actAddRoomSuccess(result.data.content))
-                // alert("Đã thêm vào hồ sơ")
+            // alert("Đã thêm vào hồ sơ")
             })
             .catch((error) => {
                 const { content } = error.response.data

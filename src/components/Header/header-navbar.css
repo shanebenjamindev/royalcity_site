@@ -1,13 +1,11 @@
 .header {
     transition: all 0.5s ease;
-    background: rgb(50, 50, 50);
     backdrop-filter: blur(2px);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 30px;
 }
 
 .navbar__Container {
@@ -77,10 +75,12 @@ select,
 .icon1 {
     color: white;
     font-size: 15px;
+    z-index: 111;
 }
 
 .icon1 a {
-    color: white;
+    transition: all 0.2s ease;
+    cursor: pointer !important;
 }
 
 .icon1 a:hover {
@@ -181,7 +181,6 @@ select,
     font-size: 14px;
     padding: 8px;
     border-radius: 50px;
-
 }
 
 .navbar-brand {

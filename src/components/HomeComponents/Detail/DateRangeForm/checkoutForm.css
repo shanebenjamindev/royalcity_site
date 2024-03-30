@@ -1,0 +1,45 @@
+.checkOut-form {
+    position: absolute;
+    top: 2rem;
+    background-color: white;
+    z-index: 1;
+    left: -18rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+}
+
+.btn__dateForm{
+    cursor: pointer;
+}
+
+.guest__Input input {
+    width: 20%;
+    text-align: center;
+    border: none;
+}
+
+.guest__Input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* moblie: width < 740px */
+@media screen and (max-width: 739px) {
+    .checkOut-form {
+        position: unset;
+    }
+}

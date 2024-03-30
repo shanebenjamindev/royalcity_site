@@ -5,7 +5,7 @@ import Loading from "./components/Loading";
 
 function App() {
   return (
-    <Suspense fallback={<>Loading...</>}>
+    <Suspense fallback={<Loading />}>
       <BrowserRouter>
         <Routes>{renderRoutes()}</Routes>
       </BrowserRouter>

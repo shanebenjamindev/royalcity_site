@@ -3,9 +3,9 @@ import { useSelector } from "react-redux";
 import "./home-menu.css";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-export default function Menu() {
+export default function Menu(props) {
   const navigate = useNavigate();
-  const listCityDataMenu = useSelector((state) => state.cityReducer.data);
+  const { listCityData } = props;
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -118,7 +118,7 @@ export default function Menu() {
               <div className="text-light bg-custom-primary" value={""}>
                 - Chọn thành phố -
               </div>
-              {listCityDataMenu?.map((city, index) => (
+              {listCityData?.map((city, index) => (
                 <option
                   onClick={handleOnChange}
                   className="nav-link dropdown__Item text-light bg-custom-primary"
