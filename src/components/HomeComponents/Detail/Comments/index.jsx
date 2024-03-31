@@ -61,6 +61,8 @@ export default function Comments(props) {
                   ? comment.avatar
                   : "https://artscimedia.case.edu/wp-content/uploads/sites/79/2016/12/14205134/no-user-image.gif"
               }
+              height={"100%"}
+              width={"100%"}
               alt="Avatar"
               className="avatar-image img-fluid rounded-circle"
             />

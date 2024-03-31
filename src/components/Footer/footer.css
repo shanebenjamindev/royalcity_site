@@ -1,4 +1,4 @@
-.footer-sky.footer-sky-v4 {
+.footer-sky{
   padding-top: 45px;
   box-shadow: inset rgba(0, 0, 0, 0.2) 10rem 10rem 10rem 10rem;
   background-color: transparent;
@@ -34,15 +34,22 @@
   color: #fff;
 }
 
-.input-group {
-  border: 2px solid white;
-}
-
-.footer-sky.footer-sky-v4 .textbox .input-group .form-control {
+.footer-sky .form-control {
   background: transparent !important;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
-.footer-sky.footer-sky-v4 .textbox .input-group .btn {
+.footer-sky .form-control:focus {
+  border: none;
+}
+
+.footer-sky .form-control:focus {
+  color: #8e7037;
+}
+
+.footer-sky .textbox .input-group .btn {
   background: transparent !important;
 }
 
@@ -60,18 +67,18 @@
   font-weight: 300;
 }
 
-.footer-sky.footer-sky-v4 .footer-bottom .footer-bottom-l a {
+.footer-sky.footer-bottom .footer-bottom-l a {
   font-weight: 400;
   color: #8e7037;
 }
 
-.footer-sky.footer-sky-v4 .footer-bottom .footer-icon a {
+.footer-sky.footer-bottom .footer-icon a {
   padding: 0px 17px;
   color: #fff;
   font-size: 18px;
 }
 
-.footer-sky.footer-sky-v4 .footer-top {
+.footer-sky.footer-top {
   background: 0;
 }
 

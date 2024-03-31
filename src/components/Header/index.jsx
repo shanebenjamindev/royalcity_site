@@ -64,7 +64,7 @@ export default function Navbar() {
         onSubmit={handleOnSubmit}
         className="formFindRoom container container-fluid d-flex flex-wrap justify-content-around align-items-center text-left"
       >
-        <div className="col-md-3 formFindRoom__Item ">
+        <div className="col-md-3 formFindRoom__Item">
           <span>Địa điểm </span>
           <select
             className="w-100 formDropdown form__Fragment"
@@ -74,7 +74,7 @@ export default function Navbar() {
             <option value="">- Chọn thành phố -</option>
             {listCityData?.map((city) => (
               <option key={city.id} value={city.id}>
-                <Link to={`/roombycity/${city.id}`}>{city.tenViTri}</Link>
+                {city.tenViTri}
               </option>
             ))}
           </select>
@@ -132,12 +132,11 @@ export default function Navbar() {
                 to="/"
               >
                 <img
-                  width="30px"
                   className="item-link"
-                  src="https://cdn-icons-png.flaticon.com/512/2111/2111254.png"
-                  alt=""
+                  width="70px"
+                  src="/public/img/logo.png"
+                  alt="logo"
                 />
-                <div className="main__Title ml-2">Diamond</div>
               </Link>
 
               <div className="d-flex">

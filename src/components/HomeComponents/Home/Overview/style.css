@@ -1,0 +1,14 @@
+#section__Overview {
+    box-shadow: inset black 0px 7px 29px 0px;
+    background-color: transparent;
+}
+
+.overview__Form {
+    padding: 30px;
+    background-color: white;
+}
+
+.overview__Form td {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--primary-color);
+}

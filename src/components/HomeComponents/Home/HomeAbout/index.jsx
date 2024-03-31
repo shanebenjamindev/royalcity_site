@@ -1,33 +1,58 @@
 import React from "react";
-
+import "./style.css";
 export default function About() {
   return (
-    <div className="container text-center">
+    <>
+      <section className="bg-white">
+        <div className="container">
+          <div>
+            <h2 className="text-center main__Title">ABOUT US</h2>
+            <div className="outline"></div>
+          </div>
+          <div className="about__Container">
+            <div className="about__Content about1">
+              <iframe
+                width={"100%"}
+                height={"300px"}
+                src="https://www.youtube.com/embed/pLs2SBd8pq0"
+                title="Hội nghị chiến lượt &amp; phân phối sản phẩm Thắng Lợi Group năm 2022"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="about__Content about2">
+              <h4 className="main__Title text-center">THẮNG LỢI GROUP</h4>
+              <p>
+                Chủ đầu tư Công ty TNHH BĐS Diamondland L.A là doanh nghiệp uy
+                tín, dày dặn kinh nghiệm và có trụ sở ngay địa phương xã Đức
+                Hòa, huyện Đức Hòa, Long An, hoạt động chủ yếu trong lĩnh vực
+                kinh doanh, phát triển bất động sản và một số ngành nghề, dịch
+                vụ liên quan.
+              </p>
+              <p>
+                Các dự án do Thắng lợi phát triển mở ra những không gian sống
+                mới, thay đổi bộ mặt cảnh quan cũng như tạo nên những giá trị
+                sống hoàn hảo mà bất kì khách hàng nào cũng đều có thể cảm nhận,
+                điều mà không nhiều dự án BĐS nào khác có thể làm được.
+              </p>
+              <div className="">
+                <h5 className="main__p">Hotline: 0987881919</h5>
+                <h5 className="main__p">mail: pnguyennha@gmail.com</h5>
+              </div>
+            </div>
+            <div className="about__Content about3">
+              <img src="/img/hoinghi1.jpg" />
+            </div>
+            <div className="about__Content about4">
+              <img src="/img/hoinghi2.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
       <div>
-        <h2 className="main__Title">LÝ DO SỞ HỮU THE DIAMOND CITY</h2>
+        <img width="100%" src="/img/ceo.jpg" />
       </div>
-      <div className="outline"></div>
-      <div className="">
-        <div>
-          <p>
-            Dự án The Diamond City sở hữu vị trí đắc địa tại tỉnh Long An là
-            vùng giao thoa giữa hai xã là Hựu Thạnh (huyện Đức Hòa) và Lương
-            Bình (huyện Bến Lức). Cụ thể, Diamond City Đức Hòa nằm ngay trên
-            đường ĐT 824, trục đường liên tỉnh kết nối hàng loạt cụm khu đô thị
-            kết hợp khu công nghiệp quy mô khủng tại ven sông Vàm Cỏ Đông.
-          </p>
-        </div>
-        <div>
-          <p>
-            Ngoài lợi thế về đầu tư và phát triển kinh tế, khu vực này cũng tập
-            trung các bệnh viện, trường học tuyến đầu của huyện Bến Lức cũng như
-            Đức Hòa. Đồng thời, nơi đây còn được xem là “hạt nhân” hút các dự án
-            phát triển hạ tầng kết nối TP.HCM đi các tỉnh miền Tây như Đồng
-            Tháp, Tiền Giang, Tân An, Cần Giuộc thông qua các “mạch máu” Quốc Lộ
-            N2, Quốc Lộ 1A, cao tốc TP.HCM – Trung Lương,..
-          </p>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }

@@ -30,13 +30,20 @@ export default function ProductDetail() {
     return (
       <>
         {data && (
-          <div className="mb-4 container-fluid d-flex justify-content-center">
-            <div className="section__Image text-center ">
-              <img
-                alt="roomImage"
-                className="rounded rounded-lg"
-                src={data.hinhAnh}
-              />
+          <div className="container">
+            <h2 className="main__Title"> {data.tenPhong} </h2>
+            <p>
+              {data.khach} khách . {data.phongNgu} phòng ngủ . {data.phongTam}{" "}
+              phòng tắm .
+            </p>
+            <div className="mb-4 container d-flex justify-content-center">
+              <div className="section__Image text-center ">
+                <img
+                  alt="roomImage"
+                  className="rounded rounded-lg"
+                  src={data.hinhAnh}
+                />
+              </div>
             </div>
           </div>
         )}
@@ -62,11 +69,6 @@ export default function ProductDetail() {
           </div>
           <div className="section__Content-primary">
             <div className="section__Item-primary px-lg-5">
-              <h2 className="main__Title"> {data.tenPhong} </h2>
-              <p>
-                {data.khach} khách . {data.phongNgu} phòng ngủ . {data.phongTam}{" "}
-                phòng tắm .
-              </p>
               {renderRoom()}
               <div className="d-flex container  flex-wrap">
                 <div className="col-lg-8 col-md-7 col-sm-12">

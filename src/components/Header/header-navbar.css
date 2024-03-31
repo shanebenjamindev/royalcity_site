@@ -30,19 +30,6 @@
 .navne2 {
     padding-bottom: 1rem;
 }
-
-.btn__Search {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
-}
-
-.btn__Search:hover {
-    color: var(--primary-color);
-    background-color: white;
-    border-color: var(--primary-color);
-}
-
-
 .icon>a:hover {
     background: transparent;
     color: var(--primary-color);
@@ -99,18 +86,6 @@ select,
     border-radius: 50px;
     align-items: center;
     color: var(--primary-color) !important;
-}
-
-.customHover {
-    z-index: 999;
-    background-color: whitesmoke;
-    border-radius: 50px;
-    align-items: center;
-}
-
-.customHover:hover {
-    box-shadow: rgba(0, 0, 0, 16) 0px 1px 4px;
-    background-color: transparent;
 }
 
 /* BUTTON SHOW FORM */

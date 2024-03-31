@@ -7,28 +7,16 @@ import HomeBlogs from "../../components/HomeComponents/Home/HomeBlogs";
 import { useDispatch, useSelector } from "react-redux";
 import { actListCity } from "../../redux/actions/actCity";
 import Loading from "../../components/Loading";
-import HomeNews from "../../components/HomeComponents/Home/HomeNews";
+import Overview from "../../components/HomeComponents/Home/Overview/Overview";
 
 export default function Home() {
-  // const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   dispatch(actListCity());
-  //   window.scrollTo(0, 0);
-  // }, []);
-
-  // const { data: cityReducerData, loading } = useSelector(
-  //   (state) => state.cityReducer
-  // );
-
   return (
     <div className="">
       <HomeCarousel />
       <HomeRoom />
+      <Overview />
       <About />
-      {/* {cityReducerData ? <Menu listCityData={cityReducerData} /> : <Loading />} */}
       <HomeBlogs />
-      <HomeNews />
     </div>
   );
 }

@@ -73,7 +73,7 @@ export const actDeleteCity = (cityId) => {
                 if (result.data.statusCode === 200) {
                     dispatch(actDeleteCitySucess(result.data.content))
                     alert(result.data.message)
-                    dispatch(actListCity())
+                    dispatch(actListCity)
                 }
             })
             .catch((error) => {
