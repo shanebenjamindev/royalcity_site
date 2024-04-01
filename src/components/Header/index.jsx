@@ -134,7 +134,7 @@ export default function Navbar() {
                 <img
                   className="item-link"
                   width="70px"
-                  src="/public/img/logo.png"
+                  src="/img/logo.png"
                   alt="logo"
                 />
               </Link>
@@ -173,15 +173,6 @@ export default function Navbar() {
                   className="dropdown-menu custom__Border-50 main__p dropdown-menu-right mt-0"
                   aria-labelledby="navbarDropdown"
                 >
-                  <a className="dropdown-item" href="/">
-                    Cho thuê nhà
-                  </a>
-                  <a className="dropdown-item" href="/">
-                    Tổ chức trãi nghiệm
-                  </a>
-                  <a className="dropdown-item" href="/">
-                    Trợ giúp
-                  </a>
                   {user?.role === "admin" ? (
                     <Link className="dropdown-item" to="/auth">
                       <span className="main__p">Admin Page</span>
